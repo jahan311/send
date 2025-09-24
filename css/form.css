@@ -2703,6 +2703,8 @@
 .contents.find .find_wrap .find_box.step02 {
   position: relative;
   width: 100%;
+}
+.contents.find .find_wrap .find_box.step02 .id_find_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2718,7 +2720,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contents.find .find_wrap .find_box.step02 p {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap p {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
@@ -2726,7 +2728,7 @@
   line-height: 3.4rem;
   text-align: center;
 }
-.contents.find .find_wrap .find_box.step02 .id_box {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box {
   max-width: 44rem;
   width: 100%;
   height: 100%;
@@ -2736,14 +2738,14 @@
   background: #f1f7ff;
   overflow-y: auto;
 }
-.contents.find .find_wrap .find_box.step02 .id_box::-webkit-scrollbar {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box::-webkit-scrollbar {
   width: 3px;
 }
-.contents.find .find_wrap .find_box.step02 .id_box::-webkit-scrollbar-thumb {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box::-webkit-scrollbar-thumb {
   background-color: #b8b8b8;
   border-radius: 30px;
 }
-.contents.find .find_wrap .find_box.step02 .id_box ul {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2759,7 +2761,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contents.find .find_wrap .find_box.step02 .id_box ul li {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box ul li {
   font-family: "Pretendard", sans-serif;
   font-weight: 600;
   font-size: 1.7rem;
@@ -2767,8 +2769,8 @@
   text-align: center;
   line-height: 2rem;
 }
-.contents.find .find_wrap .find_box.step02 button,
-.contents.find .find_wrap .find_box.step02 > a {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap button,
+.contents.find .find_wrap .find_box.step02 .id_find_wrap > a {
   display: block;
   width: 100%;
   max-width: 44rem;
@@ -2781,16 +2783,16 @@
   text-align: center;
   margin: 0 auto;
 }
-.contents.find .find_wrap .find_box.step02 button.login_btn,
-.contents.find .find_wrap .find_box.step02 > a.login_btn {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap button.login_btn,
+.contents.find .find_wrap .find_box.step02 .id_find_wrap > a.login_btn {
   background: #3f90ef;
   border: 1px solid #3f90ef;
   color: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.contents.find .find_wrap .find_box.step02 button.login_btn:hover,
-.contents.find .find_wrap .find_box.step02 > a.login_btn:hover {
+.contents.find .find_wrap .find_box.step02 .id_find_wrap button.login_btn:hover,
+.contents.find .find_wrap .find_box.step02 .id_find_wrap > a.login_btn:hover {
   background: #ffffff;
   border: 1px solid #3f90ef;
   color: #3f90ef;
@@ -3360,17 +3362,26 @@
     display: block;
     width: 100%;
   }
-  .contents.find .find_wrap .find_box.step02 p {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    display: block;
+  }
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap p {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .contents.find .find_wrap .find_box.step02 .id_box {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box {
     margin: 3rem auto 0;
   }
-  .contents.find .find_wrap .find_box.step02 .id_box ul li {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box ul li {
     font-size: 1.5rem;
   }
-  .contents.find .find_wrap .find_box.step02 .login_btn {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap .login_btn {
     margin-top: 3rem;
     width: 100%;
     max-width: 44rem;
@@ -3489,14 +3500,14 @@
   .contents.find .find_wrap .find_box.step01 .input_box input::placeholder {
     font-size: 1.3rem;
   }
-  .contents.find .find_wrap .find_box.step02 p {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap p {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .contents.find .find_wrap .find_box.step02 .id_box ul li {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap .id_box ul li {
     font-size: 1.5rem;
   }
-  .contents.find .find_wrap .find_box.step02 .login_btn {
+  .contents.find .find_wrap .find_box.step02 .id_find_wrap .login_btn {
     margin-top: 3rem;
     width: 100%;
     height: 4.8rem;
