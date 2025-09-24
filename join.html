@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>회원가입</title>
+
+    <!-- 공통 -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- 회원가입, 로그인, 문의하기 -->
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="contents join">
+            <div class="join_wrap">
+                <h1 class="logo">모비아이</h1>
+                <div class="join_box step01" style="display: none;">
+                    <div class="top">
+                        <h2>회원가입</h2>
+                        <div class="step">
+                            <div class="active"><span>1</span>약관 동의</div>
+                            <div><span>2</span>정보 입력</div>
+                            <div><span>3</span>가입 완료</div>
+                        </div>
+                    </div>
+                    <div class="agree_wrap">
+                        <div class="checkbox">
+                            <input type="checkbox" id="allChk" hidden>
+                            <label for="allChk"><span class="txt">아이센드 서비스 약관에 모두 동의합니다.</span><span
+                                    class="required">(필수)</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree01" hidden>
+                            <label for="agree01"><span class="txt">아이센드 서비스 이용약관</span><span
+                                    class="required">(필수)</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree02" hidden>
+                            <label for="agree02"><span class="txt">개인정보 수집 및 이용동의</span><span
+                                    class="required">(필수)</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree0" hidden>
+                            <label for="agree0"><span class="txt">개인정보 위탁 동의</span><span
+                                    class="required">(필수)</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree03All" hidden>
+                            <label for="agree03All"><span class="txt">마케팅 수신 동의</span><span>(선택)</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree03_01" hidden>
+                            <label for="agree03_01"><span class="txt">이메일</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree03_02" hidden>
+                            <label for="agree03_02"><span class="txt">모바일 (문자, 카카오톡)</span></label>
+                        </div>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button" class="prev_btn" disabled>이전</button>
+                        <button type="button" class="next_btn">다음</button>
+                    </div>
+                </div>
+                <div class="join_box step02">
+                    <div class="top">
+                        <h2>회원가입</h2>
+                        <div class="step">
+                            <div><span>1</span>약관 동의</div>
+                            <div class="active"><span>2</span>정보 입력</div>
+                            <div><span>3</span>가입 완료</div>
+                        </div>
+                    </div>
+                    <div class="info_wrap">
+                        <div class="input_box error">
+                            <p class="label">아이디</p>
+                            <input type="text" placeholder="6-14자 영문 숫자 조합" maxlength="14">
+                            <p class="error_msg">아이디를 입력해주세요.</p>
+                        </div>
+                        <div class="input_box">
+                            <p class="label">비밀번호</p>
+                            <input type="password" placeholder="8~14자 영문, 숫자, 특수문자 둘 이상 조합" maxlength="14">
+                        </div>
+                        <div class="input_box">
+                            <p class="label">비밀번호 확인</p>
+                            <input type="password" placeholder="8~14자 영문, 숫자, 특수문자 둘 이상 조합" maxlength="14">
+                        </div>
+                        <div class="input_box btn">
+                            <p class="label">본인인증</p>
+                            <button type="button" class="authn_btn">본인인증하기</button>
+                        </div>
+                        <div class="input_box">
+                            <p class="label">담당자명</p>
+                            <input type="text" placeholder="" value="홍길동" readonly>
+                        </div>
+                        <div class="input_box">
+                            <p class="label">연락처</p>
+                            <input type="number" placeholder="" readonly>
+                        </div>
+                        <div class="input_box">
+                            <p class="label">회사명</p>
+                            <input type="text" placeholder="회사명을 입력해주세요.">
+                        </div>
+                        <div class="input_box">
+                            <p class="label">이메일</p>
+                            <input type="email" placeholder="담당자 이메일을 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="btn_box">
+                        <button type="button" class="prev_btn">이전</button>
+                        <button type="button" class="join_btn">가입하기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="complete_wrap" style="display: none;">
+                <h1 class="logo">모비아이</h1>
+                <div class="complete_box">
+                    <p>회원가입이 완료되었습니다.<br>
+                        관리자가 2~3 영업일 이내<br class="mo_br">가입 인증 완료 후<br>
+                        아이센드 서비스를 사용하실 수 있습니다.</p>
+                    <button type="button" class="login_btn">로그인</button>
+                    <!-- a, button 중 아무거나 사용해주세요.-->
+                    <!-- <a href="" class="login_btn">로그인</a> -->
+                </div>
+            </div>
+            <div class="slide_wrap">
+                <div class="slide">
+                    <img src="./images/common/img_introduce_01.png" alt="고객이 원하는 메세지를 설계하다.">
+                </div>
+                <div class="slide">
+                    <img src="./images/common/img_introduce_02.png" alt="고객의 세그먼트를 정밀 분석하여 상황에 맞는 메시지를 제공할 수 있어요.">
+                </div>
+                <div class="slide">
+                    <img src="./images/common/img_introduce_03.png"
+                        alt="필요한 고객에게, 필요한 순간에 도달하는 아이센드 CRM 메시징 자동화를 경험하세요.">
+                </div>
+                <div class="slide">
+                    <img src="./images/common/img_introduce_04.png" alt="메시지에 포인트를 함께 발송! 효과적인 반응률을 기록하세요.">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
