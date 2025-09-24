@@ -3339,6 +3339,7 @@
     font-size: 1.4rem;
   }
   .contents.find .find_wrap .find_box.step01 .btn_box {
+    margin-top: 0;
     position: absolute;
     left: 50%;
     bottom: 0;
