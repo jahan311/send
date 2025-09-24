@@ -3356,6 +3356,10 @@
     height: 4.6rem;
     font-size: 1.5rem;
   }
+  .contents.find .find_wrap .find_box.step02 {
+    display: block;
+    width: 100%;
+  }
   .contents.find .find_wrap .find_box.step02 p {
     font-size: 2rem;
     line-height: 3rem;
