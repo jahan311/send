@@ -3364,12 +3364,16 @@
     font-size: 2rem;
     line-height: 3rem;
   }
+  .contents.find .find_wrap .find_box.step02 .id_box {
+    margin: 3rem auto 0;
+  }
   .contents.find .find_wrap .find_box.step02 .id_box ul li {
     font-size: 1.5rem;
   }
   .contents.find .find_wrap .find_box.step02 .login_btn {
     margin-top: 3rem;
-    width: 80%;
+    width: 100%;
+    max-width: 44rem;
     height: 4.8rem;
     line-height: 4.8rem;
     font-size: 1.6rem;
