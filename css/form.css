@@ -1060,7 +1060,7 @@
   background: #ffffff;
   padding-top: 0;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1624,7 +1624,24 @@
 .contents.contacat .form_wrap .form_box .row .select_box + .input_box .error_msg {
   left: 0;
 }
-.contents.contacat .form_wrap .complete_box {
+.contents.contacat .complete_wrap {
+  position: relative;
+  width: 720px;
+  min-height: 100dvh;
+  height: 100%;
+  overflow: hidden;
+}
+.contents.contacat .complete_wrap .logo {
+  position: absolute;
+  top: 2rem;
+  left: 2.2rem;
+  background: url("../images//common/img_logo.png") no-repeat center;
+  background-size: 100%;
+  width: 7.6rem;
+  height: 3.4rem;
+  font-size: 0;
+}
+.contents.contacat .complete_wrap .complete_box {
   width: 100%;
   position: absolute;
   left: 50%;
@@ -1633,7 +1650,7 @@
           transform: translate(-50%, -50%);
   text-align: center;
 }
-.contents.contacat .form_wrap .complete_box p {
+.contents.contacat .complete_wrap .complete_box p {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
@@ -1641,7 +1658,7 @@
   color: #191b1e;
   line-height: 4.4rem;
 }
-.contents.contacat .form_wrap .complete_box p::before {
+.contents.contacat .complete_wrap .complete_box p::before {
   content: "";
   display: block;
   width: 5.2rem;
@@ -1650,7 +1667,7 @@
   background-size: 100%;
   margin: 0 auto 5rem;
 }
-.contents.contacat .form_wrap .complete_box .home_btn {
+.contents.contacat .complete_wrap .complete_box .home_btn {
   margin: 5rem auto 0;
   width: 44rem;
   height: 6rem;
@@ -1666,7 +1683,7 @@
   text-align: center;
   line-height: 6rem;
 }
-.contents.contacat .form_wrap .complete_box .home_btn:hover {
+.contents.contacat .complete_wrap .complete_box .home_btn:hover {
   background: #ffffff;
   color: #3f90ef;
 }
@@ -1716,6 +1733,9 @@
     width: 100%;
     overflow-x: hidden;
   }
+  .contents.contacat .complete_wrap {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 620px) {
   .contents.contacat {
@@ -1728,7 +1748,6 @@
     display: none;
   }
   .contents.contacat .form_wrap {
-    width: 100%;
     padding: 2rem 3rem 3rem;
   }
   .contents.contacat .form_wrap .logo {
@@ -1947,14 +1966,23 @@
     left: 0;
     margin-left: 0;
   }
-  .contents.contacat .form_wrap .complete_box p {
+  .contents.contacat .complete_wrap {
+    padding: 2rem 3rem 3rem;
+    height: calc(100% - 5rem);
+  }
+  .contents.contacat .complete_wrap .logo {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .contents.contacat .complete_wrap .complete_box p {
     font-size: 2.2rem;
     line-height: 3rem;
   }
-  .contents.contacat .form_wrap .complete_box p::before {
+  .contents.contacat .complete_wrap .complete_box p::before {
     margin-bottom: 3rem;
   }
-  .contents.contacat .form_wrap .complete_box .home_btn {
+  .contents.contacat .complete_wrap .complete_box .home_btn {
     margin-top: 3rem;
     width: 80%;
     height: 4.8rem;
@@ -2005,6 +2033,9 @@
   .contents.contacat .form_wrap .form_box .row .select_box + .input_box .error_msg {
     left: 0;
     margin-left: 0;
+  }
+  .contents.contacat .complete_wrap {
+    padding: 2rem 2rem 3rem;
   }
 }
 @media screen and (max-width: 320px) {
