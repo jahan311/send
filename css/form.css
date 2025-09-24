@@ -2134,6 +2134,22 @@
   color: #4d5157;
   pointer-events: none;
 }
+.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox + .checkbox {
   margin-top: 2rem;
 }
@@ -2203,6 +2219,20 @@
 }
 .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(6) input[type=checkbox] + label .txt, .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(7) input[type=checkbox] + label .txt {
   text-decoration: none;
+}
+.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 4px 8px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  color: #4d5157;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn:hover {
+  background: #e1e1e1;
 }
 .contents.join .join_wrap .join_box.step02 .info_wrap .input_box {
   position: relative;
@@ -2401,16 +2431,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.contents.find .logo {
-  position: absolute;
-  top: 2rem;
-  left: 2.2rem;
-  background: url("../images//common/img_logo.png") no-repeat center;
-  background-size: 100%;
-  width: 7.6rem;
-  height: 3.4rem;
-  font-size: 0;
-}
 .contents.find .find_wrap {
   position: relative;
   width: 720px;
@@ -2420,28 +2440,360 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26rem 11rem 0;
+}
+.contents.find .find_wrap .logo {
+  position: absolute;
+  top: 2rem;
+  left: 2.2rem;
+  background: url("../images//common/img_logo.png") no-repeat center;
+  background-size: 100%;
+  width: 7.6rem;
+  height: 3.4rem;
+  font-size: 0;
+}
+.contents.find .find_wrap h2 {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #191b1e;
+  margin-bottom: 5rem;
+}
+.contents.find .find_wrap .find_box.step01 {
+  position: relative;
+  width: 100%;
+}
+.contents.find .find_wrap .find_box.step01 .input_box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contents.find .find_wrap .find_box.step01 .input_box + .input_box {
+  margin-top: 2.5rem;
+}
+.contents.find .find_wrap .find_box.step01 .input_box .label {
+  width: 10rem;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #4d5157;
+  line-height: 1.9rem;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input {
+  width: calc(100% - 10rem);
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  background: #ffffff;
+  border: 1px solid #e1e3e8;
+  padding: 1.4rem 1.5rem;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: #191b1e;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input::-webkit-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input::-moz-placeholder {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input:-ms-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input::-ms-input-placeholder {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input::placeholder {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input:disabled {
+  background: #ebedf1;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input:-moz-read-only {
+  background: #ebedf1;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input:read-only {
+  background: #ebedf1;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .input_box input:focus {
+  border: 1px solid #3f90ef;
+}
+.contents.find .find_wrap .find_box.step01 .input_box .error_msg {
+  position: absolute;
+  bottom: -1.6rem;
+  left: 10rem;
+  display: none;
+  width: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #ef5454;
+}
+.contents.find .find_wrap .find_box.step01 .input_box.error input {
+  border: 1px solid #ef5454;
+}
+.contents.find .find_wrap .find_box.step01 .input_box.error .error_msg {
+  display: block;
+}
+.contents.find .find_wrap .find_box.step01 .input_box .send_btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 14rem;
+  height: 3.8rem;
+  border-radius: 0.8rem;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: #3f90ef;
+  border: 1px solid #3f90ef;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.find .find_wrap .find_box.step01 .input_box .send_btn:hover {
+  background: #ffffff;
+  border: 1px solid #3f90ef;
+  color: #3f90ef;
+}
+.contents.find .find_wrap .find_box.step01 .input_box:disabled {
+  background: #ebedf1;
+  border: 1px solid #ebedf1;
+  color: #4d5157;
+  pointer-events: none;
+}
+.contents.find .find_wrap .find_box.step01 .txt {
+  margin-top: 2.5rem;
+  color: #4d5157;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  word-break: keep-all;
+}
+.contents.find .find_wrap .find_box.step01 .contact_info {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contents.find .find_wrap .find_box.step01 .contact_info p {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #91979e;
+}
+.contents.find .find_wrap .find_box.step01 .contact_info p a {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #91979e;
+  text-decoration: none;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box {
+  margin-top: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0;
+  gap: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button {
+  width: 15rem;
+  height: 5.2rem;
+  border-radius: 0.8rem;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button.prev_btn {
+  border: 1px solid #e1e3e8;
+  color: #4d5157;
+  background: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button.prev_btn:hover {
+  background: #e1e3e8;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button.next_btn {
+  background: #3f90ef;
+  border: 1px solid #3f90ef;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button.next_btn:hover {
+  background: #ffffff;
+  border: 1px solid #3f90ef;
+  color: #3f90ef;
+}
+.contents.find .find_wrap .find_box.step01 .btn_box button:disabled {
+  background: #ebedf1;
+  border: 1px solid #ebedf1;
+  color: #4d5157;
+  pointer-events: none;
+}
+.contents.find .find_wrap .find_box.step02 {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contents.find .find_wrap .find_box {
-  position: relative;
-  padding: 0 11rem;
-  width: 100%;
-}
-.contents.find .find_wrap .find_box h2 {
+.contents.find .find_wrap .find_box.step02 p {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   color: #191b1e;
+  line-height: 3.4rem;
+  text-align: center;
+}
+.contents.find .find_wrap .find_box.step02 .id_box {
+  max-width: 44rem;
+  width: 100%;
+  height: 100%;
+  max-height: 16rem;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  background: #f1f7ff;
+  overflow-y: auto;
+}
+.contents.find .find_wrap .find_box.step02 .id_box::-webkit-scrollbar {
+  width: 3px;
+}
+.contents.find .find_wrap .find_box.step02 .id_box::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 30px;
+}
+.contents.find .find_wrap .find_box.step02 .id_box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contents.find .find_wrap .find_box.step02 .id_box ul li {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #4d5157;
+  text-align: center;
+  line-height: 2rem;
+}
+.contents.find .find_wrap .find_box.step02 button,
+.contents.find .find_wrap .find_box.step02 > a {
+  display: block;
+  width: 100%;
+  max-width: 44rem;
+  height: 6rem;
+  border-radius: 0.8rem;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.contents.find .find_wrap .find_box.step02 button.login_btn,
+.contents.find .find_wrap .find_box.step02 > a.login_btn {
+  background: #3f90ef;
+  border: 1px solid #3f90ef;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.contents.find .find_wrap .find_box.step02 button.login_btn:hover,
+.contents.find .find_wrap .find_box.step02 > a.login_btn:hover {
+  background: #ffffff;
+  border: 1px solid #3f90ef;
+  color: #3f90ef;
 }
 
 @media screen and (max-height: 900px) {
@@ -2481,6 +2833,12 @@
     display: block;
   }
   .contents.join .join_wrap {
+    width: 100%;
+  }
+  .contents.find {
+    display: block;
+  }
+  .contents.find .find_wrap {
     width: 100%;
   }
 }
@@ -2818,6 +3176,9 @@
   .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(6) input[type=checkbox] + label .txt, .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(7) input[type=checkbox] + label .txt {
     text-decoration: none;
   }
+  .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn {
+    font-size: 1.2rem;
+  }
   .contents.join .join_wrap .join_box.step02 .info_wrap .input_box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2878,6 +3239,118 @@
     display: block;
   }
   .contents.join .join_wrap .join_box.step03 .complete_box .login_btn {
+    margin-top: 3rem;
+    width: 80%;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    font-size: 1.6rem;
+  }
+  .contents.find .find_wrap {
+    padding: 2rem 3rem 3rem;
+  }
+  .contents.find .find_wrap .logo {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 2rem;
+  }
+  .contents.find .find_wrap h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .contents.find .find_wrap .find_box.step01 {
+    display: block;
+    width: 100%;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box {
+    display: block;
+    width: 100%;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box + .input_box {
+    margin-top: 1.5rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box .label {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input {
+    width: 100%;
+    height: 4rem;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-moz-placeholder {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::placeholder {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box .error_msg {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    display: none;
+    width: 100%;
+    font-family: "Pretendard", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #ef5454;
+    margin: 0.6rem 0 0 0;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box .send_btn {
+    top: calc(50% + 1.1rem);
+    width: 12rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .txt {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .txt .mo_br {
+    display: block;
+  }
+  .contents.find .find_wrap .find_box.step01 .contact_info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .contact_info p {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .contact_info p a {
+    font-size: 1.4rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .btn_box {
+    gap: 1rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .btn_box button {
+    width: 13.2rem;
+    height: 4.6rem;
+    font-size: 1.5rem;
+  }
+  .contents.find .find_wrap .find_box.step02 p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .contents.find .find_wrap .find_box.step02 .id_box ul li {
+    font-size: 1.5rem;
+  }
+  .contents.find .find_wrap .find_box.step02 .login_btn {
     margin-top: 3rem;
     width: 80%;
     height: 4.8rem;
@@ -2972,6 +3445,48 @@
   }
   .contents.join .join_wrap .join_box.step02 .info_wrap .input_box .error_msg {
     margin-left: 8.5rem;
+  }
+  .contents.find .find_wrap {
+    padding: 2rem 3rem 3rem;
+  }
+  .contents.find .find_wrap .logo {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 2rem;
+  }
+  .contents.find .find_wrap h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-webkit-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-moz-placeholder {
+    font-size: 1.3rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input:-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box input::placeholder {
+    font-size: 1.3rem;
+  }
+  .contents.find .find_wrap .find_box.step02 p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .contents.find .find_wrap .find_box.step02 .id_box ul li {
+    font-size: 1.5rem;
+  }
+  .contents.find .find_wrap .find_box.step02 .login_btn {
+    margin-top: 3rem;
+    width: 100%;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 340px) {
@@ -3078,6 +3593,10 @@
     word-break: keep-all;
     max-width: 90%;
     margin: 0 auto;
+  }
+  .contents.find .find_wrap .find_box.step01 .input_box .send_btn {
+    width: 10rem;
+    font-size: 1.3rem;
   }
 }
 @-webkit-keyframes scroll-arrow {
