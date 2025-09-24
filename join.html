@@ -67,7 +67,7 @@
                         <button type="button" class="next_btn">다음</button>
                     </div>
                 </div>
-                <div class="join_box step02" style="display: none;">
+                <div class="join_box step02">
                     <div class="top">
                         <h2>회원가입</h2>
                         <div class="step">
@@ -80,17 +80,21 @@
                         <div class="input_box error">
                             <p class="label">아이디</p>
                             <input type="text" placeholder="6-14자 영문 숫자 조합" maxlength="14">
-                            <p class="error_msg">아이디를 입력해주세요.</p>
+                            <p class="error_msg" style="display: none;">아이디를 입력해주세요.</p>
+                            <p class="error_msg">아이디는 6-14자 영문 혹은 숫자로 해주세요.</p>
                         </div>
                         <div class="input_box">
                             <p class="label">비밀번호</p>
                             <input type="password" placeholder="8~14자 영문, 숫자, 특수문자 둘 이상 조합" maxlength="14">
-                            <p class="error_msg">비밀번호를 입력해주세요.</p>
+                            <p class="error_msg" style="display: none;">비밀번호를 입력해주세요.</p>
+                            <p class="error_msg">올바른 비밀번호 형태를 입력해주세요.</p>
                         </div>
                         <div class="input_box">
                             <p class="label">비밀번호 확인</p>
                             <input type="password" placeholder="8~14자 영문, 숫자, 특수문자 둘 이상 조합" maxlength="14">
-                            <p class="error_msg">비밀번호를 확인해주세요.</p>
+                            <p class="error_msg" style="display: none;">비밀번호를 입력해주세요.</p>
+                            <p class="error_msg" style="display: none;">올바른 비밀번호 형태를 입력해주세요.</p>
+                            <p class="error_msg">비밀번호가 일치하지 않습니다.</p>
                         </div>
                         <div class="input_box btn">
                             <p class="label">본인인증</p>
@@ -111,6 +115,7 @@
                         <div class="input_box">
                             <p class="label">이메일</p>
                             <input type="email" placeholder="담당자 이메일을 입력해주세요.">
+                            <p class="error_msg">올바른 이메일 형태를 입력해주세요.</p>
                         </div>
                     </div>
                     <div class="btn_box">
@@ -118,7 +123,7 @@
                         <button type="button" class="join_btn">가입하기</button>
                     </div>
                 </div>
-                <div class="join_box step03">
+                <div class="join_box step03" style="display: none;">
                     <div class="top">
                         <h2>회원가입</h2>
                         <div class="step">
@@ -154,6 +159,4 @@
             </div>
         </div>
     </div>
-
 </body>
-
