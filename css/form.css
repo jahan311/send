@@ -2810,6 +2810,9 @@
   .contents.join .join_wrap .join_box.step03 .complete_box p::before {
     margin-bottom: 3rem;
   }
+  .contents.join .join_wrap .join_box.step03 .complete_box p .mo_br {
+    display: block;
+  }
   .contents.join .join_wrap .join_box.step03 .complete_box .login_btn {
     margin-top: 3rem;
     width: 80%;
@@ -2905,9 +2908,6 @@
   }
   .contents.join .join_wrap .join_box.step02 .info_wrap .input_box .error_msg {
     margin-left: 8.5rem;
-  }
-  .contents.join .join_wrap .join_box.step03 .complete_box p .mo_br {
-    display: block;
   }
 }
 @media screen and (max-width: 340px) {
@@ -3014,9 +3014,6 @@
     word-break: keep-all;
     max-width: 90%;
     margin: 0 auto;
-  }
-  .contents.join .join_wrap .join_box.step03 .complete_box p .mo_br {
-    display: block;
   }
 }
 @-webkit-keyframes scroll-arrow {
