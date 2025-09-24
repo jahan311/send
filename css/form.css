@@ -3258,6 +3258,9 @@
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
+  .contents.find .find_wrap .find_box {
+    min-height: calc(100vh - 9rem - 3.4rem - 1.8rem);
+  }
   .contents.find .find_wrap .find_box.step01 {
     display: block;
     width: 100%;
@@ -3336,6 +3339,11 @@
     font-size: 1.4rem;
   }
   .contents.find .find_wrap .find_box.step01 .btn_box {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     gap: 1rem;
   }
   .contents.find .find_wrap .find_box.step01 .btn_box button {
