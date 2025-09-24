@@ -2463,7 +2463,7 @@
   height: 3.4rem;
   font-size: 0;
 }
-.contents.find .find_wrap h2 {
+.contents.find .find_wrap .find_box h2 {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
@@ -3246,20 +3246,21 @@
     font-size: 1.6rem;
   }
   .contents.find .find_wrap {
+    min-height: 100dvh;
     padding: 2rem 3rem 3rem;
+    display: block;
   }
   .contents.find .find_wrap .logo {
     position: relative;
     left: auto;
     top: auto;
-    margin-bottom: 2rem;
-  }
-  .contents.find .find_wrap h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
   }
   .contents.find .find_wrap .find_box {
     min-height: calc(100dvh - 9rem - 3.4rem - 1.8rem);
+  }
+  .contents.find .find_wrap .find_box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
   .contents.find .find_wrap .find_box.step01 {
     display: block;
@@ -3464,7 +3465,7 @@
     top: auto;
     margin-bottom: 2rem;
   }
-  .contents.find .find_wrap h2 {
+  .contents.find .find_wrap .find_box h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
