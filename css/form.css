@@ -3259,7 +3259,7 @@
     margin-bottom: 2rem;
   }
   .contents.find .find_wrap .find_box {
-    min-height: calc(100vh - 9rem - 3.4rem - 1.8rem);
+    min-height: calc(100dvh - 9rem - 3.4rem - 1.8rem);
   }
   .contents.find .find_wrap .find_box.step01 {
     display: block;
