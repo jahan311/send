@@ -3256,7 +3256,7 @@
     top: auto;
   }
   .contents.find .find_wrap .find_box {
-    min-height: calc(100dvh - 9rem - 3.4rem - 1.8rem);
+    min-height: calc(100dvh - 5rem - 5.4rem);
   }
   .contents.find .find_wrap .find_box h2 {
     font-size: 1.8rem;
