@@ -1117,6 +1117,7 @@
 .contents.contacat .form_wrap {
   position: relative;
   width: 720px;
+  max-height: 100dvh;
   height: 100%;
   overflow-y: auto;
 }
@@ -2378,6 +2379,69 @@
 .contents.join .join_wrap .join_box.step03 .complete_box .login_btn:hover {
   background: #ffffff;
   color: #3f90ef;
+}
+.contents.find {
+  background: #ffffff;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contents.find .logo {
+  position: absolute;
+  top: 2rem;
+  left: 2.2rem;
+  background: url("../images//common/img_logo.png") no-repeat center;
+  background-size: 100%;
+  width: 7.6rem;
+  height: 3.4rem;
+  font-size: 0;
+}
+.contents.find .find_wrap {
+  position: relative;
+  width: 720px;
+  min-height: 100dvh;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contents.find .find_wrap .find_box {
+  position: relative;
+  padding: 0 11rem;
+  width: 100%;
+}
+.contents.find .find_wrap .find_box h2 {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #191b1e;
 }
 
 @media screen and (max-height: 900px) {
