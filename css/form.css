@@ -2330,24 +2330,10 @@
 .contents.join .join_wrap .join_box.step02 .info_wrap .input_box.error .error_msg {
   display: block;
 }
-.contents.join .complete_wrap {
-  position: relative;
-  width: 720px;
-  min-height: 100dvh;
-  height: 100%;
-  overflow: hidden;
+.contents.join .join_wrap .join_box.step03 .top {
+  margin-bottom: 0;
 }
-.contents.join .complete_wrap .logo {
-  position: absolute;
-  top: 2rem;
-  left: 2.2rem;
-  background: url("../images//common/img_logo.png") no-repeat center;
-  background-size: 100%;
-  width: 7.6rem;
-  height: 3.4rem;
-  font-size: 0;
-}
-.contents.join .complete_wrap .complete_box {
+.contents.join .join_wrap .join_box.step03 .complete_box {
   width: 100%;
   position: absolute;
   left: 50%;
@@ -2356,7 +2342,7 @@
           transform: translate(-50%, -50%);
   text-align: center;
 }
-.contents.join .complete_wrap .complete_box p {
+.contents.join .join_wrap .join_box.step03 .complete_box p {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
@@ -2364,7 +2350,7 @@
   color: #191b1e;
   line-height: 4.4rem;
 }
-.contents.join .complete_wrap .complete_box p::before {
+.contents.join .join_wrap .join_box.step03 .complete_box p::before {
   content: "";
   display: block;
   width: 5.2rem;
@@ -2373,7 +2359,7 @@
   background-size: 100%;
   margin: 0 auto 5rem;
 }
-.contents.join .complete_wrap .complete_box .login_btn {
+.contents.join .join_wrap .join_box.step03 .complete_box .login_btn {
   margin: 5rem auto 0;
   width: 44rem;
   height: 6rem;
@@ -2389,16 +2375,14 @@
   text-align: center;
   line-height: 6rem;
 }
-.contents.join .complete_wrap .complete_box .login_btn:hover {
+.contents.join .join_wrap .join_box.step03 .complete_box .login_btn:hover {
   background: #ffffff;
   color: #3f90ef;
 }
 
 @media screen and (max-height: 900px) {
-  .contents.join .join_wrap .join_box {
-    min-height: 100% !important;
-  }
   .contents.join .join_wrap .join_box.step02 {
+    min-height: 100% !important;
     padding-bottom: 3rem;
   }
   .contents.join .join_wrap .join_box.step02 .btn_box {
@@ -2433,9 +2417,6 @@
     display: block;
   }
   .contents.join .join_wrap {
-    width: 100%;
-  }
-  .contents.join .complete_wrap {
     width: 100%;
   }
 }
@@ -2822,23 +2803,14 @@
     color: #ef5454;
     margin: 0.6rem 0 0 10rem;
   }
-  .contents.join .complete_wrap {
-    padding: 2rem 3rem 3rem;
-    height: calc(100% - 5rem);
-  }
-  .contents.join .complete_wrap .logo {
-    position: relative;
-    top: auto;
-    left: auto;
-  }
-  .contents.join .complete_wrap .complete_box p {
+  .contents.join .join_wrap .join_box.step03 .complete_box p {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .contents.join .complete_wrap .complete_box p::before {
+  .contents.join .join_wrap .join_box.step03 .complete_box p::before {
     margin-bottom: 3rem;
   }
-  .contents.join .complete_wrap .complete_box .login_btn {
+  .contents.join .join_wrap .join_box.step03 .complete_box .login_btn {
     margin-top: 3rem;
     width: 80%;
     height: 4.8rem;
@@ -2934,10 +2906,7 @@
   .contents.join .join_wrap .join_box.step02 .info_wrap .input_box .error_msg {
     margin-left: 8.5rem;
   }
-  .contents.join .complete_wrap {
-    padding: 2rem 2rem 3rem;
-  }
-  .contents.join .complete_wrap .complete_box p .mo_br {
+  .contents.join .join_wrap .join_box.step03 .complete_box p .mo_br {
     display: block;
   }
 }
@@ -3041,12 +3010,12 @@
   .contents.join .join_wrap .join_box.step02 .info_wrap .row .select_box + .input_box {
     width: 100%;
   }
-  .contents.join .complete_wrap .complete_box p {
+  .contents.join .join_wrap .join_box.step03 .complete_box p {
     word-break: keep-all;
     max-width: 90%;
     margin: 0 auto;
   }
-  .contents.join .complete_wrap .complete_box p .mo_br {
+  .contents.join .join_wrap .join_box.step03 .complete_box p .mo_br {
     display: block;
   }
 }
