@@ -49,6 +49,7 @@
   position: relative;
   background: #ffffff;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 .wrap header {
@@ -1623,9 +1624,9 @@
 .contents.contacat .form_wrap .form_box .row .select_box + .input_box .error_msg {
   left: 0;
 }
-.contents.contacat .form_wrap .complete {
+.contents.contacat .form_wrap .complete_box {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 3.4rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1641,7 +1642,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contents.contacat .form_wrap .complete p {
+.contents.contacat .form_wrap .complete_box p {
   font-family: "Pretendard", sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
@@ -1649,7 +1650,7 @@
   color: #191b1e;
   line-height: 4.4rem;
 }
-.contents.contacat .form_wrap .complete p::before {
+.contents.contacat .form_wrap .complete_box p::before {
   content: "";
   display: block;
   width: 5.2rem;
@@ -1658,7 +1659,7 @@
   background-size: 100%;
   margin: 0 auto 5rem;
 }
-.contents.contacat .form_wrap .complete .home_btn {
+.contents.contacat .form_wrap .complete_box .home_btn {
   margin-top: 5rem;
   width: 44rem;
   height: 6rem;
@@ -1674,7 +1675,7 @@
   text-align: center;
   line-height: 6rem;
 }
-.contents.contacat .form_wrap .complete .home_btn:hover {
+.contents.contacat .form_wrap .complete_box .home_btn:hover {
   background: #ffffff;
   color: #3f90ef;
 }
@@ -1957,18 +1958,14 @@
     left: 0;
     margin-left: 0;
   }
-  .contents.contacat .form_wrap .complete {
-    min-height: calc(100svh - 8.4rem);
-    max-height: calc(100lvh - 8.4rem);
-  }
-  .contents.contacat .form_wrap .complete p {
+  .contents.contacat .form_wrap .complete_box p {
     font-size: 2.2rem;
     line-height: 3rem;
   }
-  .contents.contacat .form_wrap .complete p::before {
+  .contents.contacat .form_wrap .complete_box p::before {
     margin-bottom: 3rem;
   }
-  .contents.contacat .form_wrap .complete .home_btn {
+  .contents.contacat .form_wrap .complete_box .home_btn {
     margin-top: 3rem;
     width: 80%;
     height: 4.8rem;
