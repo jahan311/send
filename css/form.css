@@ -1626,21 +1626,12 @@
 }
 .contents.contacat .form_wrap .complete_box {
   width: 100%;
-  height: calc(100% - 3.4rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 .contents.contacat .form_wrap .complete_box p {
   font-family: "Pretendard", sans-serif;
@@ -1660,7 +1651,7 @@
   margin: 0 auto 5rem;
 }
 .contents.contacat .form_wrap .complete_box .home_btn {
-  margin-top: 5rem;
+  margin: 5rem auto 0;
   width: 44rem;
   height: 6rem;
   border-radius: 0.8rem;
