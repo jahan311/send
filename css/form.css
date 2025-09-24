@@ -2601,7 +2601,7 @@
   border: 1px solid #3f90ef;
   color: #3f90ef;
 }
-.contents.find .find_wrap .find_box.step01 .input_box:disabled {
+.contents.find .find_wrap .find_box.step01 .input_box .send_btn:disabled {
   background: #ebedf1;
   border: 1px solid #ebedf1;
   color: #4d5157;
@@ -3246,17 +3246,20 @@
     font-size: 1.6rem;
   }
   .contents.find .find_wrap {
-    min-height: 100dvh;
+    height: 100dvh;
     padding: 2rem 3rem 3rem;
     display: block;
+    overflow: hidden;
   }
   .contents.find .find_wrap .logo {
     position: relative;
     left: auto;
     top: auto;
+    margin-bottom: 0;
   }
   .contents.find .find_wrap .find_box {
-    min-height: calc(100dvh - 5rem - 5.4rem);
+    margin-top: 2rem;
+    min-height: calc(100dvh - 5rem - 3.4rem - 2rem);
   }
   .contents.find .find_wrap .find_box h2 {
     font-size: 1.8rem;
@@ -3458,12 +3461,6 @@
   }
   .contents.find .find_wrap {
     padding: 2rem 3rem 3rem;
-  }
-  .contents.find .find_wrap .logo {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin-bottom: 2rem;
   }
   .contents.find .find_wrap .find_box h2 {
     font-size: 1.8rem;
