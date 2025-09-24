@@ -1720,9 +1720,6 @@
 @media screen and (max-width: 620px) {
   .contents.contacat {
     display: block;
-    height: 100%;
-    overflow-y: auto;
-    -ms-overflow-style: none;
   }
   .contents.contacat::-webkit-scrollbar {
     display: none;
