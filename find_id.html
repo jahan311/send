@@ -11,25 +11,32 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <!-- 회원가입, 로그인, 문의하기 -->
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/member.css">
 </head>
 
 <body>
     <div class="wrap">
         <div class="contents find">
             <div class="find_wrap">
-            <h1 class="logo">모비아이</h1>
-                <div class="find_box step01" style="display: none;">
+                <h1 class="logo">모비아이</h1>
+                <div class="find_id_box step01">
                     <h2>아이디 찾기</h2>
-                    <div class="input_box">
-                        <p class="label">휴대폰 번호</p>
-                        <input type="number" placeholder="휴대폰 번호를 입력해주세요.">
-                        <button type="button" class="send_btn" disabled>인증번호 전송</button>
-                    </div>
                     <div class="input_box error">
+                        <p class="label">휴대폰 번호</p>
+                        <div class="row">
+                            <input type="number" placeholder="휴대폰 번호를 입력해주세요.">
+                            <button type="button" class="send_btn">인증번호 전송</button>
+                        </div>
+                        <p class="error_msg">휴대폰 번호를 입력해주세요.</p>
+                    </div>
+                    <div class="input_box">
                         <p class="label">인증번호</p>
-                        <input type="number" placeholder="휴대폰에 전송된 인증번호를 입력해주세요.">
-                        <p class="error_msg">인증번호를 입력해주세요.</p>
+                        <div class="row">
+                            <input type="number" placeholder="휴대폰에 전송된 인증번호를 입력해주세요.">
+                            <span class="time">02:59</span>
+                        </div>
+                        <p class="error_msg">인증번호가 일치하지 않습니다.</p>
+                        <p class="error_msg">입력 시간이 초과되었습니다.</p>
                     </div>
                     <p class="txt">가입 시 등록한 정보 확인이 불가할 경우 <br class="mo_br">관리자에게 문의해주시기 바랍니다.</p>
                     <div class="contact_info">
@@ -41,7 +48,7 @@
                         <button type="button" class="next_btn">다음</button>
                     </div>
                 </div>
-                <div class="find_box step02">
+                <div class="find_id_box step02" style="display: none;">
                     <h2>아이디 찾기</h2>
                     <div class="id_find_wrap">
                         <p>회원님이 보유하신 아이디는<br>다음과 같습니다.</p>
@@ -77,4 +84,40 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const stepBoxes = document.querySelectorAll(".find_id_box");
+            const nextBtn = document.querySelector(".next_btn");
+            const prevBtn = document.querySelector(".prev_btn");
+            const loginBtn = document.querySelector(".login_btn");
+            let currentStep = 0;
+
+            function showStep(index) {
+                stepBoxes.forEach((box, i) => {
+                    box.style.display = i === index ? "block" : "none";
+                });
+                currentStep = index;
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener("click", () => {
+                    if (currentStep < stepBoxes.length - 1) {
+                        showStep(currentStep + 1);
+                    }
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener("click", () => {
+                    if (currentStep > 0) {
+                        showStep(currentStep - 1);
+                    }
+                });
+            }
+
+            showStep(0);
+        });
+    </script>
 </body>
+
+</html>

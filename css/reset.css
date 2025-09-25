@@ -184,6 +184,12 @@ input {
   border: 0;
   outline: 0;
 }
+input:-moz-read-only {
+  pointer-events: none;
+}
+input:disabled, input:read-only {
+  pointer-events: none;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

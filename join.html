@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <!-- 회원가입, 로그인, 문의하기 -->
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/member.css">
 </head>
 
 <body>
@@ -31,28 +31,31 @@
                     <div class="agree_wrap">
                         <div class="checkbox">
                             <input type="checkbox" id="allChk" hidden>
-                            <label for="allChk"><span class="txt">아이센드 서비스 약관에 모두 동의합니다.</span><span class="required">(필수)</span></label>
+                            <label for="allChk"><span class="txt">아이센드 서비스 약관에 모두 동의합니다.</span><span
+                                    class="required">(필수)</span></label>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="agree01" hidden>
                             <label for="agree01"><span class="txt">아이센드 서비스 이용약관</span><span
                                     class="required">(필수)</span></label>
-                            <button type="button" class="agree_show_btn">자세히보기</button>
+                            <button type="button" class="more_btn">자세히보기</button>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="agree02" hidden>
                             <label for="agree02"><span class="txt">개인정보 수집 및 이용동의</span><span
                                     class="required">(필수)</span></label>
-                            <button type="button" class="agree_show_btn">자세히보기</button>
+                            <button type="button" class="more_btn">자세히보기</button>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="agree0" hidden>
                             <label for="agree0"><span class="txt">개인정보 위탁 동의</span><span
-                                    class="required">(필수)</span></label>
+                                    class="required">(필수)</span></label><button type="button"
+                                class="more_btn">자세히보기</button>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="agree03All" hidden>
-                            <label for="agree03All"><span class="txt">마케팅 수신 동의</span><span>(선택)</span></label>
+                            <label for="agree03All"><span class="txt">마케팅 수신 동의</span><span>(선택)</span></label><button
+                                type="button" class="more_btn">자세히보기</button>
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" id="agree03_01" hidden>
@@ -161,3 +164,45 @@
         </div>
     </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const stepBoxes = document.querySelectorAll(".join_box");
+        const prevBtns = document.querySelectorAll(".prev_btn");
+        const nextBtns = document.querySelectorAll(".next_btn");
+        const joinBtn = document.querySelector(".join_btn");
+        let currentStep = 0;
+
+        function showStep(index) {
+            stepBoxes.forEach((box, i) => {
+                box.style.display = i === index ? "block" : "none";
+            });
+            currentStep = index;
+        }
+
+        nextBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                if (currentStep < stepBoxes.length - 1) {
+                    showStep(currentStep + 1);
+                }
+            });
+        });
+
+        prevBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                if (currentStep > 0) {
+                    showStep(currentStep - 1);
+                }
+            });
+        });
+
+        if (joinBtn) {
+            joinBtn.addEventListener("click", () => {
+                showStep(2); // step03
+            });
+        }
+
+        showStep(0);
+    });
+</script>
+
+</html>

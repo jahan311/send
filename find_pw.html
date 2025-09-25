@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <!-- 회원가입, 로그인, 문의하기 -->
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/member.css">
 </head>
 
 <body>
     <div class="wrap">
         <div class="contents find">
             <div class="find_wrap">
-            <h1 class="logo">모비아이</h1>
+                <h1 class="logo">모비아이</h1>
                 <div class="find_pw_box step01">
                     <div class="top">
                         <h2>비밀번호 찾기</h2>
@@ -82,11 +82,11 @@
                         <p class="error_msg">비밀번호를 입력해주세요.</p>
                     </div>
                     <div class="btn_box">
-                        <button type="button" class="prev_btn" disabled>이전</button>
+                        <button type="button" class="prev_btn">이전</button>
                         <button type="button" class="next_btn">비밀번호 변경</button>
                     </div>
                 </div>
-                <div class="find_pw_box step03"style="display: none;">
+                <div class="find_pw_box step03" style="display: none;">
                     <div class="top">
                         <h2>비밀번호 찾기</h2>
                         <div class="step">
@@ -122,5 +122,41 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const stepBoxes = document.querySelectorAll(".find_pw_box");
+            const nextBtns = document.querySelectorAll(".next_btn");
+            const prevBtns = document.querySelectorAll(".prev_btn");
+            const loginBtn = document.querySelector(".login_btn");
+            let currentStep = 0;
 
+            function showStep(index) {
+                stepBoxes.forEach((box, i) => {
+                    box.style.display = i === index ? "block" : "none";
+                });
+                currentStep = index;
+            }
+
+            nextBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    if (currentStep < stepBoxes.length - 1) {
+                        showStep(currentStep + 1);
+                    }
+                });
+            });
+
+            prevBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    if (currentStep > 0) {
+                        showStep(currentStep - 1);
+                    }
+                });
+            });
+
+
+            showStep(0);
+        });
+    </script>
 </body>
+
+</html>

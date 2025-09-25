@@ -1051,6 +1051,43 @@
           transform: translate(0, 0);
   opacity: 1;
 }
+.wrap .floating {
+  position: fixed;
+  bottom: 4rem;
+  right: 5rem;
+  z-index: 999;
+}
+.wrap .floating a {
+  display: block;
+  background: url("../images//common/ico_contact.png") no-repeat center;
+  background-size: 100%;
+  width: 7.6rem;
+  height: 7.6rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  font-size: 0;
+  z-index: 1;
+}
+.wrap .floating:hover a {
+  background: url("../images//common/ico_contact_hover.png") no-repeat center;
+  background-size: 100%;
+}
+.wrap .floating:hover a::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 17.4rem;
+  height: 7.6rem;
+  border-radius: 3rem;
+  background: #ffffff;
+  border: 1px solid #1e5ccc;
+  z-index: 0;
+}
 
 .mo_br {
   display: none;
@@ -1140,7 +1177,7 @@
 }
 .contents.contacat .form_wrap .form_box {
   width: 100%;
-  padding: 10rem 11rem 3rem;
+  padding: 8rem 11rem 3rem;
 }
 .contents.contacat .form_wrap .form_box h2 {
   font-family: "Pretendard", sans-serif;
@@ -1510,7 +1547,7 @@
   border-top: 0;
 }
 .contents.contacat .form_wrap .form_box .agree_box {
-  margin: 5.5rem auto 2rem;
+  margin: 4rem auto 2rem;
   text-align: center;
 }
 .contents.contacat .form_wrap .form_box .agree_box input[type=checkbox] {
@@ -2220,7 +2257,7 @@
 .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(6) input[type=checkbox] + label .txt, .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(7) input[type=checkbox] + label .txt {
   text-decoration: none;
 }
-.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn {
+.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .more_btn {
   font-family: "Pretendard", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
@@ -2231,7 +2268,7 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn:hover {
+.contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .more_btn:hover {
   background: #e1e1e1;
 }
 .contents.join .join_wrap .join_box.step02 .info_wrap .input_box {
@@ -3735,7 +3772,7 @@
   .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(6) input[type=checkbox] + label .txt, .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox:nth-of-type(7) input[type=checkbox] + label .txt {
     text-decoration: none;
   }
-  .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .agree_show_btn {
+  .contents.join .join_wrap .join_box.step01 .agree_wrap .checkbox .more_btn {
     font-size: 1.2rem;
   }
   .contents.join .join_wrap .join_box.step02 .info_wrap .input_box {
@@ -4699,4 +4736,4 @@
   text-align: center;
   vertical-align: middle;
   word-break: keep-all;
-}/*# sourceMappingURL=form.css.map */
+}/*# sourceMappingURL=member.css.map */
