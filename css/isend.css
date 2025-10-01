@@ -731,6 +731,7 @@
   text-align: center;
   -webkit-transform: all 0.3s ease-in-out;
           transform: all 0.3s ease-in-out;
+  color: #000000;
 }
 .wrap .contents section.main .swiper .swiper-wrapper .swiper-slide .inner .txt_box .more_btn::after {
   content: "";
