@@ -2,6 +2,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     // smooth scroll
     (function () {
+        const isMobile = /Mobi|Android|iPad|iPhone/i.test(navigator.userAgent);
+        if (isMobile) return;
+
         const scrollSpeed = 0.08;
         let targetScroll = window.scrollY;
         let currentScroll = window.scrollY;
@@ -25,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         updateScroll();
     })();
+
 
     // section on 제어
     (function () {
