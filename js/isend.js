@@ -65,27 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
   function adjustSwiperLayout() {
     const swiperEl = document.querySelector('.sc04Swiper');
     const activeSlide = document.querySelector('.sc04Swiper .swiper-slide.active');
-    const btnBox = document.querySelector('.sc04Swiper .custom_btn');
-
     if (swiperEl && activeSlide) {
       swiperEl.style.height = activeSlide.scrollHeight + 'px';
-    }
-
-    if (window.innerWidth <= 767 && activeSlide && btnBox) {
-      const slideHeight = activeSlide.offsetHeight;
-      btnBox.style.top = slideHeight - 35 + 'px';
-      btnBox.style.transform = 'translateY(0)';
-      btnBox.style.bottom = 'auto';
     }
   }
 
   function updateSlides() {
     slides.forEach(slide => slide.classList.remove('prev', 'active', 'next'));
-
     if (slides.length > 0) {
       const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
       const nextIndex = (currentIndex + 1) % slides.length;
-
       slides[prevIndex].classList.add('prev');
       slides[currentIndex].classList.add('active');
       slides[nextIndex].classList.add('next');
@@ -151,17 +140,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const swiperEl = document.querySelector('.sc04Swiper');
     let startX = 0;
+    let startY = 0;
     let isDragging = false;
+    let isScrolling = false;
 
-    function dragStart(x) {
+    function dragStart(x, y) {
       startX = x;
+      startY = y;
       isDragging = true;
+      isScrolling = false;
+    }
+
+    function dragMove(x, y, e) {
+      if (!isDragging) return;
+      const diffX = x - startX;
+      const diffY = y - startY;
+
+      if (Math.abs(diffY) > Math.abs(diffX)) {
+        isScrolling = true;
+      } else {
+        e.preventDefault();
+      }
     }
 
     function dragEnd(x) {
-      if (!isDragging) return;
-      const diffX = x - startX;
+      if (!isDragging || isScrolling) {
+        isDragging = false;
+        return;
+      }
 
+      const diffX = x - startX;
       if (Math.abs(diffX) > 50) {
         if (diffX > 0 && currentIndex > 0) {
           currentIndex--;
@@ -175,10 +183,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (swiperEl) {
-      swiperEl.addEventListener('touchstart', e => dragStart(e.touches[0].clientX));
+      swiperEl.addEventListener('touchstart', e => dragStart(e.touches[0].clientX, e.touches[0].clientY), {
+        passive: true
+      });
+      swiperEl.addEventListener('touchmove', e => dragMove(e.touches[0].clientX, e.touches[0].clientY, e), {
+        passive: false
+      });
       swiperEl.addEventListener('touchend', e => dragEnd(e.changedTouches[0].clientX));
 
-      swiperEl.addEventListener('mousedown', e => dragStart(e.clientX));
+      swiperEl.addEventListener('mousedown', e => dragStart(e.clientX, e.clientY));
+      swiperEl.addEventListener('mousemove', e => dragMove(e.clientX, e.clientY, e));
       swiperEl.addEventListener('mouseup', e => dragEnd(e.clientX));
     }
   }
@@ -194,7 +208,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }, 200);
   });
-
 
 
   // sc05

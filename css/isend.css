@@ -3525,7 +3525,7 @@
   }
   .wrap .contents .sc04 .inner .sc04Swiper .custom_btn {
     top: auto;
-    bottom: auto;
+    bottom: 5rem;
     width: 100%;
     z-index: 4;
   }
